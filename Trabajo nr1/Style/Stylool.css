@@ -1,0 +1,15 @@
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    text-decoration: underline crimson;
+
+}
+image{
+    list-style-image: unset;
+
+}
+html{
+    background-color: rgb(132, 211, 54);
+}
