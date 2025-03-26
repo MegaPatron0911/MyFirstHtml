@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="numero1" type="text" placeholder="Ingrese numero 1">
+        <input id="numero2" type="text" placeholder="Ingrese numero 2">
+        <button id="sumarBtn">Sumar Numeros</button>
+        <h1 id="resultado"></h1>
+    </div>
+    
+    <script>
+        
+        
+            document.getElementById("sumarBtn").onclick = function(){
+            var resultado = 0;
+            let number1 = parseInt(document.getElementById("numero1").value);
+            let number2 = parseInt(document.getElementById("numero2").value);
+            if((isNaN(number1))){
+             document.getElementById("resultado").innerHTML="No has digitado el número 1 para validar tu operación";
+             document.getElementById("numero1").style.background= "red";
+
+            }
+            if((isNaN(number2))){
+                document.getElementById("resultado").innerHTML = "No has digitado el número 2 para validar tu operación";
+                document.getElementById("numero2").style.backgroundColor = "red";
+            }
+            if((isNaN(number1))||(isNaN(number2))){
+                document.getElementById("resultado").innerHTML = "Usuario no sea CV y digite los dos datos";
+            }else{
+                resultado = number1+number2;
+                document.getElementById("resultado").innerHTML = "El resultado es: "+resultado;
+            }
+        }
+    </script>
+</body>
+</html>

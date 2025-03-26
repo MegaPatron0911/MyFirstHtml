@@ -1,0 +1,19 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.galeria{
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 70vw;
+}
+
+.imagenGaleria{
+    border-radius: 10px;
+    height: 200px;
+    margin: 15px;
+    width: 200px
+}
